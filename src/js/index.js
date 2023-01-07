@@ -1,4 +1,4 @@
 import 'reset-css'
-import '../sass/main.scss'
+import '../styles/main.scss'
 
 console.log('test-test')

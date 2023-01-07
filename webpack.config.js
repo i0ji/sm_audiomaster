@@ -24,11 +24,11 @@ module.exports = {
     },
     plugins: [
         new HTMLWebpackPlugin({
-            template: './index.html'
+            template: './src/index.html'
         }),
         new CopyPlugin({
             patterns: [
-                {from: "img", to: "img"},
+                {from: "src/img", to: "img"},
             ],
         }),
         new CleanWebpackPlugin(),

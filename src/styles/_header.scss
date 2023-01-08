@@ -1,0 +1,53 @@
+// ---------- HEADER ----------
+.header {
+  font-family: Gilroy, sans-serif;
+
+  // ---------- HEADER-TOP-LINE
+  &__top-line {
+    height: 50px;
+
+    .container-xl {
+
+      .row {
+
+        div {
+          height: 50px;
+          display: flex;
+          justify-content: space-evenly;
+          align-items: center;
+
+          p {
+            font-style: normal;
+            font-weight: 400;
+            font-size: 18px;
+            line-height: 26px;
+            color: #ffffff;
+          }
+
+        }
+      }
+    }
+
+    // ---------- HEADER-NAVBAR
+    &__navbar {
+      height: 87px;
+    }
+
+    // ---------- HEADER-BOT-LINE
+    &__bot-line {
+      height: 41px;
+    }
+  }
+}
+
+
+// ---------- HEADER-MEDIA ----------
+@media (max-width: 450px) {
+  .header {
+    &__top-line {
+      display: none;
+    }
+  }
+}
+
+

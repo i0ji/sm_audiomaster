@@ -40,4 +40,64 @@ table {
   border-spacing: 0;
 }
 
+.bg-dark {
+  background-color: #201F1F;
+}
+
+.bg-grey {
+  background-color: #3C3C3C;
+}
+
+.bg-yellow {
+  background-color: #F6A700;
+}
+
+@font-face {
+  font-family: "Gilroy";
+  src: url("../fonts/Gilroy-Bold.ttf");
+  src: url("../fonts/Gilroy-Regular.ttf");
+}
+.header {
+  font-family: Gilroy, sans-serif;
+}
+.header__top-line {
+  height: 50px;
+}
+.header__top-line .container-xl .row div {
+  height: 50px;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+}
+.header__top-line .container-xl .row div p {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 26px;
+  color: #ffffff;
+}
+.header__top-line__navbar {
+  height: 87px;
+}
+.header__top-line__bot-line {
+  height: 41px;
+}
+
+@media (max-width: 450px) {
+  .header__top-line {
+    display: none;
+  }
+}
+.footer__top-line {
+  height: 680px;
+}
+.footer__bot-line {
+  height: 41px;
+}
+
+.container-fluid {
+  padding: 0;
+  font-family: Gilroy, sans-serif;
+}
+
 /*# sourceMappingURL=main.css.map */

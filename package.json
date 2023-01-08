@@ -27,6 +27,7 @@
   "dependencies": {
     "copy-webpack-plugin": "^11.0.0",
     "css-loader": "^6.7.3",
+    "file-loader": "^6.2.0",
     "mini-css-extract-plugin": "^2.7.2",
     "reset-css": "^5.0.1",
     "sass": "^1.57.1",

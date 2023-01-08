@@ -19,6 +19,18 @@ module.exports = {
                     'css-loader',
                     'sass-loader',
                 ]
+            },
+            {
+                test: /\.(woff(2)?|ttf|eot|svg)(\?v=\d+\.\d+\.\d+)?$/,
+                use: [
+                    {
+                        loader: 'file-loader',
+                        options: {
+                            name: '[name].[ext]',
+                            outputPath: 'fonts/'
+                        }
+                    }
+                ]
             }
         ]
     },
@@ -28,7 +40,8 @@ module.exports = {
         }),
         new CopyPlugin({
             patterns: [
-                {from: "src/img", to: "img"},
+                {from: 'src/img', to: 'img'},
+                {from: 'src/fonts', to: 'fonts'}
             ],
         }),
         new CleanWebpackPlugin(),

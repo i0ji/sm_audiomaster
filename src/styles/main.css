@@ -40,6 +40,10 @@ table {
   border-spacing: 0;
 }
 
+.bg-black {
+  background-color: #0F0F0F;
+}
+
 .bg-dark {
   background-color: #201F1F;
 }
@@ -83,8 +87,59 @@ table {
 .header__top-line .container .row div img {
   margin-right: 3px;
 }
-.header__navbar {
-  height: 87px;
+.header__top-line .container .row .contacts p {
+  font-size: 16px;
+  font-weight: 600;
+}
+.header__top-line .container .row .callback {
+  height: 28px;
+  width: 150px;
+}
+.header__navbar .row {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.header__navbar-catalogue {
+  justify-content: right;
+  display: flex;
+}
+.header__navbar-catalogue .catalogue-button {
+  font-weight: 700;
+  font-size: 21px;
+  line-height: 34px;
+  width: 143px;
+  height: 34px;
+  color: black;
+  display: flex;
+  justify-content: space-evenly;
+}
+.header__navbar-catalogue .catalogue-button-hidden {
+  display: none;
+}
+.header__navbar-search-form label {
+  position: relative;
+}
+.header__navbar-search-form label input {
+  width: 308px;
+  height: 41px;
+  padding-right: 10px;
+  border: 1px solid #FFFFFF;
+  border-radius: 8px;
+  color: #FFFFFF;
+  background-color: #0F0F0F;
+  text-indent: 10px;
+  outline: none;
+}
+.header__navbar-search-form label .input-search-button {
+  position: absolute;
+  width: 34px;
+  height: 34px;
+  right: 4px;
+  top: 3px;
+  background: #F6A700;
+  border-radius: 8px;
+  border: none;
 }
 .header__bot-line {
   height: 41px;
@@ -102,7 +157,7 @@ table {
   .header__top-line .container .row p {
     margin-right: 5px;
   }
-  .header__top-line .container .row .header-contacts {
+  .header__top-line .container .row .contacts {
     display: none;
   }
 }
@@ -111,6 +166,16 @@ table {
     justify-content: space-evenly;
   }
   .header .container .row .col-2 {
+    display: none;
+  }
+}
+@media (max-width: 375px) {
+  .header__navbar-catalogue .catalogue-button-hidden {
+    display: flex;
+    width: 43px;
+    height: 43px;
+  }
+  .header__navbar-catalogue .catalogue-button {
     display: none;
   }
 }
@@ -150,9 +215,7 @@ button:active {
 }
 
 .common-yellow-button {
-  width: 150px;
   min-width: 142px;
-  height: 28px;
   font-style: normal;
   font-weight: 600;
   font-size: 14px;

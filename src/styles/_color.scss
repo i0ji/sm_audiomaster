@@ -2,6 +2,11 @@
 $brand-dark: #201F1F;
 $brand-grey: #3C3C3C;
 $brand-yellow: #F6A700;
+$brand-black: #0F0F0F;
+
+.bg-black {
+  background-color: $brand-black;
+}
 
 .bg-dark {
   background-color: $brand-dark;

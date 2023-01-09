@@ -33,19 +33,92 @@
           }
 
         }
+
+        .contacts {
+          p {
+            font-size: 16px;
+            font-weight: 600;
+          }
+        }
+
+        .callback {
+          height: 28px;
+          width: 150px;
+        }
       }
     }
   }
 
   // ---------- HEADER-NAVBAR
   &__navbar {
-    height: 87px;
+
+    .row {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+
+    &-logo {
+      //background-color: red;
+    }
+
+    &-catalogue {
+      justify-content: right;
+      display: flex;
+
+      .catalogue-button {
+        font-weight: 700;
+        font-size: 21px;
+        line-height: 34px;
+        width: 143px;
+        height: 34px;
+        color: black;
+        display: flex;
+        justify-content: space-evenly;
+      }
+
+      .catalogue-button-hidden {
+        display: none;
+      }
+    }
+
+    &-search-form {
+
+      label {
+        position: relative;
+
+
+        input {
+          width: 308px;
+          height: 41px;
+          padding-right: 10px;
+          border: 1px solid #FFFFFF;
+          border-radius: 8px;
+          color: #FFFFFF;
+          background-color: $brand-black;
+          text-indent: 10px;
+          outline: none;
+        }
+
+        .input-search-button {
+          position: absolute;
+          width: 34px;
+          height: 34px;
+          right: 4px;
+          top: 3px;
+          background: $brand-yellow;
+          border-radius: 8px;
+          border: none;
+        }
+      }
+    }
   }
 
   // ---------- HEADER-BOT-LINE
   &__bot-line {
     height: 41px;
   }
+
 }
 
 
@@ -69,7 +142,7 @@
             margin-right: 5px;
           }
 
-          .header-contacts {
+          .contacts {
             display: none;
           }
         }
@@ -78,14 +151,31 @@
   }
 }
 
+
 @media (max-width: 650px) {
   .header {
     .container {
       .row {
         justify-content: space-evenly;
+
         .col-2 {
           display: none;
         }
+      }
+    }
+  }
+}
+
+@media (max-width: 375px) {
+  .header {
+    &__navbar-catalogue {
+      .catalogue-button-hidden {
+        display: flex;
+        width: 43px;
+        height: 43px;
+      }
+      .catalogue-button {
+        display: none;
       }
     }
   }

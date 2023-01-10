@@ -67,6 +67,9 @@ table {
 .header__top-line {
   height: 50px;
 }
+.header__top-line .container .row {
+  justify-content: space-between;
+}
 .header__top-line .container .row .text-menu {
   justify-content: space-between;
 }
@@ -98,27 +101,42 @@ table {
   height: 28px;
   width: 150px;
 }
-.header__navbar .row {
-  display: flex;
-  align-items: center;
-  justify-content: center;
+@media (max-width: 450px) {
+  .header .header__top-line {
+    display: none;
+  }
 }
-.header__navbar-catalogue {
-  justify-content: right;
-  display: flex;
+@media (max-width: 1240px) {
+  .header .header__top-line .container .row {
+    justify-content: space-between;
+  }
+  .header .header__top-line .container .row p {
+    margin-right: 5px;
+  }
+  .header .header__top-line .container .row .contacts {
+    display: none;
+  }
+}
+@media (max-width: 650px) {
+  .header .header .container .row {
+    justify-content: space-evenly;
+  }
+  .header .header .container .row .col-2 {
+    display: none;
+  }
+}
+.header__navbar div {
+  justify-content: center;
+  align-items: center;
 }
 .header__navbar-catalogue .catalogue-button {
-  font-weight: 700;
-  font-size: 21px;
-  line-height: 34px;
-  width: 143px;
+  justify-content: space-evenly;
   height: 34px;
   color: black;
-  display: flex;
-  justify-content: space-evenly;
 }
-.header__navbar-catalogue .catalogue-button-hidden {
-  display: none;
+.header__navbar-catalogue .catalogue-button span {
+  font-size: 18px;
+  padding-left: 10px;
 }
 .header__navbar-search-form label {
   position: relative;
@@ -126,62 +144,61 @@ table {
 .header__navbar-search-form label input {
   width: 308px;
   height: 41px;
-  padding-right: 10px;
+  left: 740px;
+  top: 72px;
   border: 1px solid #FFFFFF;
   border-radius: 8px;
-  color: #FFFFFF;
-  background-color: #0F0F0F;
-  text-indent: 10px;
   outline: none;
+  background-color: #0F0F0F;
 }
-.header__navbar-search-form label .input-search-button {
+.header__navbar-search-form label button {
   position: absolute;
+  top: 3px;
+  right: 3px;
+  background-color: #F6A700;
   width: 34px;
   height: 34px;
-  right: 4px;
-  top: 3px;
-  background: #F6A700;
   border-radius: 8px;
+}
+.header__navbar-menu {
+  display: flex;
+}
+.header__navbar-menu button:nth-child(1) {
+  width: 304px;
+}
+.header__navbar-menu .navbar-menu__item {
   border: none;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  width: 150px;
+  height: 100%;
+  background-color: transparent;
+  color: #FFFFFF;
+}
+@media (max-width: 650px) {
+  .header .header__navbar {
+    display: flex;
+    flex-flow: row wrap;
+  }
+  .header .header__navbar-logo {
+    order: 1;
+  }
+  .header .header__navbar-catalogue {
+    order: 3;
+  }
+  .header .header__navbar-search-form {
+    order: 4;
+  }
+  .header .header__navbar-menu {
+    order: 2;
+  }
 }
 .header__bot-line {
   height: 41px;
 }
 
-@media (max-width: 450px) {
-  .header__top-line {
-    display: none;
-  }
-}
-@media (max-width: 1240px) {
-  .header__top-line .container .row {
-    justify-content: space-between;
-  }
-  .header__top-line .container .row p {
-    margin-right: 5px;
-  }
-  .header__top-line .container .row .contacts {
-    display: none;
-  }
-}
-@media (max-width: 650px) {
-  .header .container .row {
-    justify-content: space-evenly;
-  }
-  .header .container .row .col-2 {
-    display: none;
-  }
-}
-@media (max-width: 375px) {
-  .header__navbar-catalogue .catalogue-button-hidden {
-    display: flex;
-    width: 43px;
-    height: 43px;
-  }
-  .header__navbar-catalogue .catalogue-button {
-    display: none;
-  }
-}
 .footer__top-line {
   height: 680px;
 }
@@ -199,7 +216,7 @@ table {
 }
 
 .container {
-  max-width: 1240px;
+  max-width: 1200px;
 }
 
 button {

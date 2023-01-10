@@ -10,6 +10,10 @@
 
       .row {
 
+        .text-menu {
+          justify-content: space-between;
+        }
+
         div {
           height: 50px;
           display: flex;
@@ -136,7 +140,7 @@
     &__top-line {
       .container {
         .row {
-          justify-content: space-evenly;
+          justify-content: space-between;
 
           p {
             margin-right: 5px;

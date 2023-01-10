@@ -67,6 +67,9 @@ table {
 .header__top-line {
   height: 50px;
 }
+.header__top-line .container .row .text-menu {
+  justify-content: space-between;
+}
 .header__top-line .container .row div {
   height: 50px;
   display: flex;
@@ -152,7 +155,7 @@ table {
 }
 @media (max-width: 1240px) {
   .header__top-line .container .row {
-    justify-content: space-evenly;
+    justify-content: space-between;
   }
   .header__top-line .container .row p {
     margin-right: 5px;

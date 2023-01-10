@@ -4,6 +4,7 @@
 @import 'fonts';
 @import 'header';
 @import 'footer';
+@import 'features';
 
 
 // ---------- COMMON-SETTINGS ----------
@@ -39,7 +40,7 @@ button:active {
 
 // ---------- COMMON ELEMENTS ----------
 .common-yellow-button {
-  min-width: 142px;
+  width: 142px;
   font-style: normal;
   font-weight: 600;
   font-size: 14px;

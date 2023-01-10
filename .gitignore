@@ -1,3 +1,4 @@
-/node_modules/
 /templates/
 /.idea/
+/node_modules/
+/dist/

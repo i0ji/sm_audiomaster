@@ -1,0 +1,50 @@
+// ---------- ABOUT ----------
+.about {
+  background-image: url('../img/about/bg.png');
+  background-repeat: no-repeat;
+  background-position: center bottom;
+  height: 790px;
+  display: flex;
+  flex-direction: row;
+  position: relative;
+
+
+  .about__prev-button,
+  .about__next-button {
+    position: absolute;
+    top: 45%;
+    background-color: transparent;
+    border: none;
+  }
+
+  .about__next-button {
+    right: 49px;
+  }
+
+  .about__prev-button {
+    left: 49px;
+  }
+
+
+  .container {
+    display: flex;
+    align-items: center;
+    height: 600px;
+    .about__text {
+      display: flex;
+      flex-direction: column;
+      align-items: start;
+      justify-content: space-between;
+      width: 550px;
+      height: 300px;
+
+      .common-yellow-button {
+        width: 172px;
+        height: 38px;
+      }
+    }
+  }
+
+
+
+}

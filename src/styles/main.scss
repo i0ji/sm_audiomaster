@@ -4,17 +4,13 @@
 @import 'fonts';
 @import 'header';
 @import 'footer';
-@import 'features';
+@import 'about';
 
 
 // ---------- COMMON-SETTINGS ----------
 .container-fluid {
   padding: 0;
   font-family: Gilroy, sans-serif;
-}
-
-.ad {
-  height: 300px;
 }
 
 .container {
@@ -36,6 +32,31 @@ button:active {
   transform: scale(0.98);
 }
 
+
+// ---------- COMMON-TEXT-TITLE-SETTINGS
+.common-title-l {
+  font-style: normal;
+  font-weight: 700;
+  font-size: 50px;
+  line-height: 45px;
+  color: #FFFFFF;
+}
+
+    // ----- WHITE TEXT
+.common-text-s-w {
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 28px;
+  color: #FFFFFF;
+}
+
+    // ----- BLACK TEXT
+.common-text-s-b {
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 22px;
+  color: $brand-black;
+}
 
 
 // ---------- COMMON ELEMENTS ----------

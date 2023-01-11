@@ -6,30 +6,19 @@
   height: 790px;
   display: flex;
   flex-direction: row;
-  position: relative;
 
 
   .about__prev-button,
   .about__next-button {
-    position: absolute;
-    top: 45%;
     background-color: transparent;
     border: none;
   }
 
-  .about__next-button {
-    right: 49px;
-  }
-
-  .about__prev-button {
-    left: 49px;
-  }
-
-
-  .container {
+  .container-fluid {
     display: flex;
     align-items: center;
     height: 600px;
+
     .about__text {
       display: flex;
       flex-direction: column;
@@ -44,7 +33,22 @@
       }
     }
   }
+}
 
 
+// ---------- ABOUT MEDIA----------
+@media (max-width: 768px) {
+  .about {
+    flex-flow: row wrap;
+    .container {
+      order: 1;
+    }
 
+    .about__prev-button {
+      order: 2;
+    }
+    .about__next-button {
+      order: 3;
+    }
+  }
 }

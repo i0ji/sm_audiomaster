@@ -251,18 +251,43 @@ table {
 .header__bot-line {
   height: 41px;
   display: flex;
+  flex-direction: row;
   align-items: center;
+  justify-content: space-between;
 }
 .header__bot-line .container {
-  padding: 0 30px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
 }
-.header__bot-line p {
+.header__bot-line .container p {
   font-style: normal;
   font-weight: 400;
   font-size: 12px;
   line-height: 20px;
   text-transform: uppercase;
   color: #FFFFFF;
+  text-align: center;
+  padding: 0 10px;
+}
+.header__bot-line .container .mobile__numbers {
+  display: none;
+}
+@media (max-width: 640px) {
+  .header__bot-line .container {
+    align-items: center;
+    justify-content: right;
+  }
+  .header__bot-line .container p {
+    display: none;
+  }
+  .header__bot-line .container .mobile__numbers {
+    align-items: center;
+    display: flex;
+  }
+  .header__bot-line .container .mobile__numbers img {
+    padding-right: 5px;
+  }
 }
 
 .footer__top-line {
@@ -279,27 +304,18 @@ table {
   height: 790px;
   display: flex;
   flex-direction: row;
-  position: relative;
 }
 .about .about__prev-button,
 .about .about__next-button {
-  position: absolute;
-  top: 45%;
   background-color: transparent;
   border: none;
 }
-.about .about__next-button {
-  right: 49px;
-}
-.about .about__prev-button {
-  left: 49px;
-}
-.about .container {
+.about .container-fluid {
   display: flex;
   align-items: center;
   height: 600px;
 }
-.about .container .about__text {
+.about .container-fluid .about__text {
   display: flex;
   flex-direction: column;
   align-items: start;
@@ -307,11 +323,25 @@ table {
   width: 550px;
   height: 300px;
 }
-.about .container .about__text .common-yellow-button {
+.about .container-fluid .about__text .common-yellow-button {
   width: 172px;
   height: 38px;
 }
 
+@media (max-width: 768px) {
+  .about {
+    flex-flow: row wrap;
+  }
+  .about .container {
+    order: 1;
+  }
+  .about .about__prev-button {
+    order: 2;
+  }
+  .about .about__next-button {
+    order: 3;
+  }
+}
 .container-fluid {
   padding: 0;
   font-family: Gilroy, sans-serif;

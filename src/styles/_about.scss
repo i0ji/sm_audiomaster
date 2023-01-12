@@ -13,6 +13,8 @@
     align-items: center;
     height: 600px;
 
+
+    // ---------- ABOUT-TEXT
     .about__text {
       display: flex;
       flex-direction: column;
@@ -45,6 +47,7 @@
     display: none;
   }
 }
+
 @media (max-width: 768px) {
 
   .about {
@@ -80,12 +83,14 @@
     flex-direction: column;
     align-items: center;
 
-  &__button-block {
-    display: flex;
-    justify-content: space-between;
-    width: 100%;
-    padding: 30px 0;
-  }
+
+    // ---------- ABOUT-HIDDEN-BLOCK
+    &__button-block {
+      display: flex;
+      justify-content: space-between;
+      width: 100%;
+      padding: 30px 0;
+    }
 
     .hidden-button-small {
       width: 172px;

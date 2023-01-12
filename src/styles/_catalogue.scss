@@ -1,0 +1,133 @@
+// ---------- CATALOGUE-BLOCK ----------
+.catalogue {
+  height: 907px;
+
+  // ---------- CATALOGUE-BENEFITS-ITEMS
+  &__benefits-items {
+    display: flex;
+    flex-direction: row;
+
+    .benefits-item {
+      display: flex;
+      position: relative;
+      justify-content: space-evenly;
+      align-items: center;
+      height: 60px;
+
+      &__text {
+        width: 280px;
+      }
+
+      &__background-number {
+        position: absolute;
+        left: 49px;
+        bottom: 32px;
+        opacity: 0.1;
+        font-size: 47px;
+        font-weight: 900;
+      }
+
+      img {
+        width: 34px;
+        height: auto;
+      }
+    }
+
+  }
+
+  // ---------- CATALOGUE-SETS
+  .common-title-m {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 160px;
+  }
+
+  .sets-table__category {
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 30px;
+    display: flex;
+    align-items: center;
+
+
+    .category-name {
+      justify-content: center;
+      display: flex;
+
+      button {
+        color: $brand-yellow;
+      }
+    }
+
+
+  }
+
+  .sets-table__sets-item {
+    display: flex;
+    height: 87px;
+    justify-content: space-evenly;
+    align-items: center;
+
+    img {
+      width: 85px;
+      height: 85px;
+    }
+
+    :nth-child(2) {
+      display: flex;
+      flex-direction: column;
+      justify-content: space-evenly;
+
+      .item-price {
+        font-style: normal;
+        font-weight: 900;
+        font-size: 16px;
+        line-height: 22px;
+      }
+
+      .item-disc {
+        font-style: normal;
+        font-weight: 500;
+        font-size: 16px;
+        line-height: 22px;
+      }
+    }
+  }
+
+
+  // ---------- MEDIA-CATALOGUE-BLOCK ----------
+  @media (max-width: 600px) {
+    .sets-table__category {
+      div:nth-child(3) {
+        display: none;
+      }
+    }
+    .sets-table__items {
+      div:nth-child(n+7) {
+        display: none;
+      }
+    }
+  }
+
+
+}
+
+// ---------- MEDIA CATALOGUE-BENEFITS-ITEMS
+@media (max-width: 600px) {
+  .catalogue__benefits-items {
+    height: 230px;
+    flex-direction: column;
+
+    .benefits-item {
+      width: 100%;
+
+      .benefits-item__background-number {
+        bottom: 27px;
+        left: 92px;
+      }
+    }
+  }
+}
+
+

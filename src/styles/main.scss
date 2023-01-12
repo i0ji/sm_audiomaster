@@ -5,6 +5,7 @@
 @import 'header';
 @import 'footer';
 @import 'about';
+@import 'catalogue';
 
 
 // ---------- COMMON-SETTINGS ----------
@@ -21,6 +22,8 @@
 button {
   cursor: pointer;
   transition: .3s all;
+  border: none;
+  background-color: transparent;
 }
 
 button:hover {
@@ -41,6 +44,13 @@ button:active {
   font-size: 50px;
   line-height: 45px;
   color: #FFFFFF;
+}
+
+.common-title-m {
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 28px;
+  color: $brand-black;
 }
 
     // ----- WHITE TEXT

@@ -8,15 +8,7 @@
   flex-direction: row;
 
 
-  .about__prev-button,
-  .about__next-button {
-    background-color: transparent;
-    border: none;
-  }
 
-  .common-yellow-button.hidden {
-    display: none;
-  }
 
   .container-fluid {
     display: flex;
@@ -36,56 +28,70 @@
         height: 38px;
       }
     }
+
+      .about__prev-button,
+      .about__next-button {
+        background-color: transparent;
+        border: none;
+      }
+
+      .common-yellow-button.hidden {
+        display: none;
+      }
+
+    }
   }
 
-  @media (max-width: 768px) {
-    .container-fluid {
-      height: 400px;
-    }
 
-      .row {
-        display: flex;
-        flex-flow: row wrap;
-        justify-content: center;
+// ---------- ABOUT-MEDIA ----------
+@media (max-width: 768px) {
+  .container-fluid {
+    height: 400px;
+  }
+
+  .row {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    max-width: 100%;
+
+
+    .col-md-10 {
+      display: flex;
+      order: 1;
+
+      .about__text {
+        height: 100px;
         max-width: 100%;
 
-
-        .col-10 {
-          display: flex;
-          order: 1;
-
-          .about__text {
-            height: 100px;
-            max-width: 100%;
-
-            .common-title-l {
-              text-align: center;
-              max-width: 435px;
-            }
-          }
-
-          .common-yellow-button {
-            display: none;
-          }
-
-          .common-text-s-w {
-            display: none;
-          }
+        .common-title-l {
+          text-align: center;
+          max-width: 435px;
         }
+      }
 
-        .about__prev-button {
-          order: 2
-        }
+      .common-yellow-button {
+        display: none;
+      }
 
-        .about__next-button {
-          order: 3;
-        }
-
-        .common-yellow-button.hidden {
-          order: 4;
-          display: flex;
-        }
+      .common-text-s-w {
+        display: none;
       }
     }
 
+    .about__prev-button {
+      order: 2;
+      width: 50%;
+    }
+
+    .about__next-button {
+      order: 3;
+      width: 50%;
+    }
+
+    .common-yellow-button.hidden {
+      order: 4;
+      display: flex;
+    }
+  }
 }

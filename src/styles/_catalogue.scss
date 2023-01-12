@@ -1,6 +1,7 @@
 // ---------- CATALOGUE-BLOCK ----------
 .catalogue {
-  height: 907px;
+  height: auto;
+
 
   // ---------- CATALOGUE-BENEFITS-ITEMS
   &__benefits-items {
@@ -35,6 +36,7 @@
 
   }
 
+
   // ---------- CATALOGUE-SETS
   .common-title-m {
     display: flex;
@@ -54,13 +56,8 @@
     .category-name {
       justify-content: center;
       display: flex;
-
-      button {
-        color: $brand-yellow;
-      }
+      color: $brand-yellow;
     }
-
-
   }
 
   .sets-table__sets-item {
@@ -91,43 +88,43 @@
         font-weight: 500;
         font-size: 16px;
         line-height: 22px;
+        max-width: 200px;
       }
     }
   }
 
 
-  // ---------- MEDIA-CATALOGUE-BLOCK ----------
+  // ---------- MEDIA-CATALOGUE ----------
   @media (max-width: 600px) {
+    .common-title-m {
+      text-align: center;
+    }
     .sets-table__category {
       div:nth-child(3) {
         display: none;
       }
     }
     .sets-table__items {
+
       div:nth-child(n+7) {
         display: none;
       }
     }
-  }
+    .catalogue__benefits-items {
+      height: 230px;
+      flex-direction: column;
 
+      .benefits-item {
+        width: 100%;
 
-}
-
-// ---------- MEDIA CATALOGUE-BENEFITS-ITEMS
-@media (max-width: 600px) {
-  .catalogue__benefits-items {
-    height: 230px;
-    flex-direction: column;
-
-    .benefits-item {
-      width: 100%;
-
-      .benefits-item__background-number {
-        bottom: 27px;
-        left: 92px;
+        .benefits-item__background-number {
+          bottom: 27px;
+          left: 92px;
+        }
       }
     }
   }
 }
+
 
 

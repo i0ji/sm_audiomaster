@@ -38,7 +38,7 @@
 
   // ---------- FEATURES-QUESTION
   .features__question {
-
+    margin-top: 100px;
     background-color: $brand-grey;
     border-radius: 10px;
     height: 150px;
@@ -50,8 +50,12 @@
       width: auto;
 
       &__img {
+        min-width: 144px;
+
         img {
           margin-top: -60px;
+          min-width: 186px;
+          min-height: 144px;
         }
       }
 
@@ -85,18 +89,7 @@
         }
       }
     }
-
-
   }
-
-
-
-
-
-
-
-
-
 
 
   // ---------- FEATURES-MEDIA ----------
@@ -118,6 +111,45 @@
       }
     }
 
+  }
+}
+
+@media (max-width: 1020px) {
+  .features {
+    &__question {
+      .question-block {
+        display: flex;
+        height: 100%;
+        width: 100%;
+        flex-flow: row wrap;
+
+        &__img {
+          width: 20%;
+          min-width: 180px;
+
+          img {
+            width: 100%;
+            height: auto;
+          }
+        }
+
+        &__texts {
+          width: 40%;
+        }
+
+        &__social-buttons {
+          width: 18%;
+          min-width: 117px;
+
+          img {
+            min-width: 26px;
+            width: 22%;
+            height: auto;
+          }
+        }
+
+      }
+    }
   }
 }
 
@@ -144,6 +176,40 @@
         width: 80%;
         font-weight: 800;
         margin: auto 0;
+      }
+    }
+  }
+}
+
+@media (max-width: 850px) {
+  .features {
+
+    .features__question {
+      height: 274px;
+
+      .question-block {
+        flex-direction: column;
+        align-items: start;
+        justify-content: space-between;
+
+        &__img {
+          padding: 0 15px;
+        }
+
+        &__texts {
+          padding: 0 15px;
+          text-align: left;
+          width: 100%;
+
+          .common-text-s-w {
+            display: flex;
+          }
+        }
+
+        &__social-buttons {
+          padding: 15px 15px;
+          width: 160px;
+        }
       }
     }
   }
@@ -179,7 +245,8 @@
 
 @media (max-width: 450px) {
   .features {
-    height: 150px;
+    height: 450px;
+
     .features__title {
       display: flex;
       flex-flow: row wrap;

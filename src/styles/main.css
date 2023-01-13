@@ -492,6 +492,7 @@ table {
   background: linear-gradient(#ffffff 60%, #F6A700 30%);
 }
 .features .features__question {
+  margin-top: 100px;
   background-color: #3C3C3C;
   border-radius: 10px;
   height: 150px;
@@ -502,8 +503,13 @@ table {
   align-items: center;
   width: auto;
 }
+.features .features__question .question-block__img {
+  min-width: 144px;
+}
 .features .features__question .question-block__img img {
   margin-top: -60px;
+  min-width: 186px;
+  min-height: 144px;
 }
 .features .features__question .question-block__texts {
   display: flex;
@@ -538,6 +544,34 @@ table {
     height: auto;
   }
 }
+@media (max-width: 1020px) {
+  .features__question .question-block {
+    display: flex;
+    height: 100%;
+    width: 100%;
+    flex-flow: row wrap;
+  }
+  .features__question .question-block__img {
+    width: 20%;
+    min-width: 180px;
+  }
+  .features__question .question-block__img img {
+    width: 100%;
+    height: auto;
+  }
+  .features__question .question-block__texts {
+    width: 40%;
+  }
+  .features__question .question-block__social-buttons {
+    width: 18%;
+    min-width: 117px;
+  }
+  .features__question .question-block__social-buttons img {
+    min-width: 26px;
+    width: 22%;
+    height: auto;
+  }
+}
 @media (max-width: 900px) and (min-width: 450px) {
   .features .features__title {
     display: flex;
@@ -558,6 +592,31 @@ table {
     width: 80%;
     font-weight: 800;
     margin: auto 0;
+  }
+}
+@media (max-width: 850px) {
+  .features .features__question {
+    height: 274px;
+  }
+  .features .features__question .question-block {
+    flex-direction: column;
+    align-items: start;
+    justify-content: space-between;
+  }
+  .features .features__question .question-block__img {
+    padding: 0 15px;
+  }
+  .features .features__question .question-block__texts {
+    padding: 0 15px;
+    text-align: left;
+    width: 100%;
+  }
+  .features .features__question .question-block__texts .common-text-s-w {
+    display: flex;
+  }
+  .features .features__question .question-block__social-buttons {
+    padding: 15px 15px;
+    width: 160px;
   }
 }
 @media (max-width: 650px) {
@@ -582,7 +641,7 @@ table {
 }
 @media (max-width: 450px) {
   .features {
-    height: 150px;
+    height: 450px;
   }
   .features .features__title {
     display: flex;

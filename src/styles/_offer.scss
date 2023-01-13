@@ -46,12 +46,80 @@
   // ---------- OFFER-LIST
   &__list {
 
-    .offer_item {
-      height: 364px;
-      background-color: lightblue;
-      border: 1px solid black;
+    .offer-item {
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      height: auto;
+
+      img {
+        max-width: 200px;
+        height: auto;
+      }
+
+      p, div {
+        margin-top: 8px;
+      }
+
+      &__name {
+        color: $brand-black;
+        font-weight: 600;
+        font-size: 14px;
+        line-height: 18px;
+        height: 20px;
+        display: flex;
+        align-items: center;
+      }
+
+      &__price {
+        font-size: 16px;
+        font-weight: 700;
+
+      }
+
+      &__purchase {
+        color: $brand-grey;
+        font-weight: 300;
+        font-size: 14px;
+        line-height: 17px;
+        opacity: 0.8;
+      }
+
+      &__buttons {
+        display: flex;
+
+        .offer-item__card-button {
+          width: 70px;
+          height: 38px;
+        }
+      }
     }
   }
+
+  &__categories-button {
+    margin-top: 25px;
+    padding: 0;
+    color: #23A1D1;
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 27px;
+  }
+
+  &__categories-button:after {
+    display: block;
+    left: 0;
+    width: 0;
+    height: 2px;
+    background-color: #23A1D1;
+    content: "";
+    transition: width 0.3s ease-out;
+  }
+
+  &__categories-button:hover:after,
+  &__categories-button:focus:after {
+    width: 100%;
+  }
+
 }
 
 

@@ -1,0 +1,85 @@
+// ---------- OFFER-SECTION ----------
+.offer {
+
+
+  // ---------- OFFER-TITLE
+  &__title {
+    position: relative;
+    height: 130px;
+
+    .col-3 {
+      .common-title-m {
+        width: 21%;
+        height: 80px;
+        line-height: 40px;
+      }
+
+      hr {
+        position: absolute;
+        width: 238px;
+        height: 4px;
+        opacity: 1;
+        background-color: #F6A700;
+        border: none;
+        top: 82px;
+        left: 13px;
+      }
+    }
+
+    .col-9 {
+      display: flex;
+      justify-content: center;
+
+      .common-text-s-b {
+        font-weight: 400;
+        font-size: 20px;
+        line-height: 27px;
+        width: 750px;
+
+        span {
+          font-weight: 700;
+        }
+      }
+    }
+  }
+
+  // ---------- OFFER-LIST
+  &__list {
+
+    .offer_item {
+      height: 364px;
+      background-color: lightblue;
+      border: 1px solid black;
+    }
+  }
+}
+
+
+// ---------- MEDIA-OFFER ----------
+@media (max-width: 1100px) {
+  .offer {
+    &__title {
+      .col-9 {
+        display: none;
+      }
+      .col-3 {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 70px;
+
+        .common-title-m {
+        text-align: center;
+        width: auto;
+        border-bottom: 5px solid $brand-yellow;
+        height: 62px;
+      }
+
+        hr {
+          display: none;
+        }
+      }
+    }
+  }
+}

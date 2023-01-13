@@ -57,7 +57,7 @@ table {
 }
 
 @font-face {
-  font-family: "Gilroy";
+  font-family: "Gilroy", sans-serif;
   src: url("../fonts/Gilroy-Bold.ttf");
   src: url("../fonts/Gilroy-Regular.ttf");
 }
@@ -667,9 +667,68 @@ table {
     line-height: 25px;
   }
 }
+.offer__title {
+  position: relative;
+  height: 130px;
+}
+.offer__title .col-3 .common-title-m {
+  width: 21%;
+  height: 80px;
+  line-height: 40px;
+}
+.offer__title .col-3 hr {
+  position: absolute;
+  width: 238px;
+  height: 4px;
+  opacity: 1;
+  background-color: #F6A700;
+  border: none;
+  top: 82px;
+  left: 13px;
+}
+.offer__title .col-9 {
+  display: flex;
+  justify-content: center;
+}
+.offer__title .col-9 .common-text-s-b {
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 27px;
+  width: 750px;
+}
+.offer__title .col-9 .common-text-s-b span {
+  font-weight: 700;
+}
+.offer__list .offer_item {
+  height: 364px;
+  background-color: lightblue;
+  border: 1px solid black;
+}
+
+@media (max-width: 1100px) {
+  .offer__title .col-9 {
+    display: none;
+  }
+  .offer__title .col-3 {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 70px;
+  }
+  .offer__title .col-3 .common-title-m {
+    text-align: center;
+    width: auto;
+    border-bottom: 5px solid #F6A700;
+    height: 62px;
+  }
+  .offer__title .col-3 hr {
+    display: none;
+  }
+}
 .container-fluid {
   padding: 0;
-  font-family: Gilroy, sans-serif;
+  font-family: "Gilroy", sans-serif;
   align-items: center;
 }
 

@@ -95,31 +95,6 @@
       }
     }
   }
-
-  &__categories-button {
-    margin-top: 25px;
-    padding: 0;
-    color: #23A1D1;
-    font-weight: 600;
-    font-size: 14px;
-    line-height: 27px;
-  }
-
-  &__categories-button:after {
-    display: block;
-    left: 0;
-    width: 0;
-    height: 2px;
-    background-color: #23A1D1;
-    content: "";
-    transition: width 0.3s ease-out;
-  }
-
-  &__categories-button:hover:after,
-  &__categories-button:focus:after {
-    width: 100%;
-  }
-
 }
 
 

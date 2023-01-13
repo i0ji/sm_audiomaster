@@ -1,0 +1,22 @@
+// ---------- MANUFACTURER-SECTION ----------
+.manufacturer {
+
+  // ---------- MANUFACTURER-TITLE
+
+  .manufacturer__title {
+    display: flex;
+    align-items: center;
+    height: 100px;
+  }
+
+ // ---------- MANUFACTURER-LIST
+  &__item  {
+    height: 97px;
+
+    img {
+      width: 100%;
+      height: auto;
+    }
+  }
+
+}

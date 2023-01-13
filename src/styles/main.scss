@@ -38,6 +38,31 @@ button:active {
   transform: scale(0.98);
 }
 
+
+.blue-link-button {
+  margin-top: 25px;
+  padding: 0;
+  color: #23A1D1;
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 27px;
+}
+
+.blue-link-button:after {
+  display: block;
+  left: 0;
+  width: 0;
+  height: 2px;
+  background-color: #23A1D1;
+  content: "";
+  transition: width 0.3s ease-out;
+}
+
+.blue-link-button:hover:after,
+.blue-link-button:focus:after {
+  width: 100%;
+}
+
 .common-yellow-button {
   width: 142px;
   font-style: normal;

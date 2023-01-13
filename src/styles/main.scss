@@ -6,6 +6,7 @@
 @import 'footer';
 @import 'about';
 @import 'catalogue';
+@import 'features';
 
 
 // ---------- COMMON-SETTINGS ----------
@@ -34,6 +35,26 @@ button:hover {
 button:active {
   opacity: 0.6;
   transform: scale(0.98);
+}
+
+.common-yellow-button {
+  width: 142px;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 17px;
+  display: flex;
+  align-items: center;
+  text-align: center;
+  justify-content: center;
+  color: #FFFFFF;
+  background-color: $brand-yellow;
+  border-radius: 5px;
+  border: none;
+}
+
+section {
+  margin-bottom: 50px;
 }
 
 
@@ -69,21 +90,4 @@ button:active {
   color: $brand-black;
 }
 
-
-// ---------- COMMON ELEMENTS ----------
-.common-yellow-button {
-  width: 142px;
-  font-style: normal;
-  font-weight: 600;
-  font-size: 14px;
-  line-height: 17px;
-  display: flex;
-  align-items: center;
-  text-align: center;
-  justify-content: center;
-  color: #FFFFFF;
-  background-color: $brand-yellow;
-  border-radius: 5px;
-  border: none;
-  }
 

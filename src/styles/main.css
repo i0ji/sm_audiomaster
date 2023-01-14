@@ -892,6 +892,7 @@ table {
   color: #0F0F0F;
 }
 .credit__font-block .credit__text {
+  padding: 0 20px;
   height: 300px;
   display: flex;
   flex-direction: column;

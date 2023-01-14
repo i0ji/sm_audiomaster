@@ -10,12 +10,17 @@
 @import 'offer';
 @import 'manufacturer';
 @import 'booking';
+@import 'credit';
 
 // ---------- COMMON-SETTINGS ----------
 .container-fluid {
   padding: 0;
   font-family: 'Gilroy', sans-serif;
   align-items: center;
+}
+
+section {
+  margin-bottom: 50px;
 }
 
 .container {
@@ -38,7 +43,6 @@ button:active {
   opacity: 0.6;
   transform: scale(0.98);
 }
-
 
 .blue-link-button {
   margin-top: 25px;
@@ -80,8 +84,8 @@ button:active {
   border: none;
 }
 
-section {
-  margin-bottom: 50px;
+.thick-yellow-line {
+  background: linear-gradient(transparent 60%, $brand-yellow 30%);
 }
 
 
@@ -98,10 +102,20 @@ section {
   font-weight: 700;
   font-size: 36px;
   line-height: 28px;
+
   color: $brand-black;
 }
 
-    // ----- WHITE TEXT
+
+    // ----- BOLD-TEXT
+.common-text-bold {
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 30px;
+  color: $brand-black;
+}
+
+    // ----- WHITE-TEXT
 .common-text-s-w {
   font-weight: 400;
   font-size: 20px;
@@ -109,7 +123,7 @@ section {
   color: #FFFFFF;
 }
 
-    // ----- BLACK TEXT
+    // ----- BLACK-TEXT
 .common-text-s-b {
   font-weight: 400;
   font-size: 18px;

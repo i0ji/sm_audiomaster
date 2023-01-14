@@ -488,9 +488,6 @@ table {
   font-size: 24px;
   line-height: 29px;
 }
-.features .features__title .thick-yellow-line {
-  background: linear-gradient(#ffffff 60%, #F6A700 30%);
-}
 .features .features__question {
   margin-top: 100px;
   background-color: #3C3C3C;
@@ -886,10 +883,55 @@ table {
     order: 2;
   }
 }
+.credit__font-block {
+  background: #F4F4F4;
+  border-radius: 5px;
+  position: relative;
+}
+.credit__font-block p {
+  color: #0F0F0F;
+}
+.credit__font-block .credit__text {
+  height: 300px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+}
+.credit__font-block .credit__text .common-text-bold {
+  font-size: calc(1em + 1vw);
+}
+.credit__font-block .credit__text .common-title-l {
+  font-size: calc(2em + 1vw);
+  text-align: left;
+}
+.credit__font-block .credit__banks-img div {
+  display: flex;
+  justify-content: start;
+  align-items: center;
+}
+.credit__font-block .credit__banks-img img {
+  margin: 10px 5px;
+}
+.credit__font-block .credit__image {
+  position: relative;
+  padding: 0;
+  min-height: 240px;
+}
+.credit__font-block .credit__image img {
+  opacity: 0.2;
+  position: absolute;
+  right: 0;
+  bottom: 0;
+}
+
 .container-fluid {
   padding: 0;
   font-family: "Gilroy", sans-serif;
   align-items: center;
+}
+
+section {
+  margin-bottom: 50px;
 }
 
 .container {
@@ -953,8 +995,8 @@ button:active {
   border: none;
 }
 
-section {
-  margin-bottom: 50px;
+.thick-yellow-line {
+  background: linear-gradient(transparent 60%, #F6A700 30%);
 }
 
 .common-title-l {
@@ -969,6 +1011,13 @@ section {
   font-weight: 700;
   font-size: 36px;
   line-height: 28px;
+  color: #0F0F0F;
+}
+
+.common-text-bold {
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 30px;
   color: #0F0F0F;
 }
 

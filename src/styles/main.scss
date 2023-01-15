@@ -11,6 +11,7 @@
 @import 'manufacturer';
 @import 'booking';
 @import 'credit';
+@import 'masters';
 
 // ---------- COMMON-SETTINGS ----------
 .container-fluid {
@@ -102,7 +103,6 @@ button:active {
   font-weight: 700;
   font-size: 36px;
   line-height: 28px;
-
   color: $brand-black;
 }
 

@@ -69,6 +69,10 @@ button:active {
   width: 100%;
 }
 
+.thick-yellow-line {
+  background: linear-gradient(transparent 60%, $brand-yellow 30%);
+}
+
 .common-yellow-button {
   width: 142px;
   font-style: normal;
@@ -83,10 +87,6 @@ button:active {
   background-color: $brand-yellow;
   border-radius: 5px;
   border: none;
-}
-
-.thick-yellow-line {
-  background: linear-gradient(transparent 60%, $brand-yellow 30%);
 }
 
 

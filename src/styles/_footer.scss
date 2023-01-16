@@ -1,11 +1,52 @@
 // ---------- FOOTER ----------
 .footer {
 
-   &__top-line {
-     height: 680px;
-   }
+  &__top-line {
+    height: 680px;
+
+    .row {
+      height: 460px;
+
+
+      .footer__schedule {
+        display: flex;
+
+        .common-text-s-w {
+          font-size: 14px;
+        }
+
+        flex-direction: column;
+        justify-content: space-evenly;
+
+        .footer__social-icons {
+          p {
+            width: 100%;
+          }
+
+          img {
+            margin-right: 7px;
+            margin-top: 5px;
+            width: 46px;
+            height: auto;
+          }
+        }
+      }
+
+
+    }
+
+    .footer__privacy {
+      margin-top: 30px;
+      text-align: center;
+    }
+  }
 
   &__bot-line {
-    height: 41px;
+    height: auto;
+
+
+    .common-text-s-w {
+      font-size: 14px;
+    }
   }
 }

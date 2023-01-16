@@ -2,6 +2,79 @@
 .masters {
 
   // ---------- MASTERS-VIDEO
+  &__video {
+    justify-content: space-between;
+    margin: 30px 0;
+    padding: 0;
+
+    .row {
+      margin: 0;
+      padding: 0;
+    }
+
+    &-item {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      width: 216px;
+      position: relative;
+
+      img:nth-child(2) {
+        position: absolute;
+        margin: auto;
+        left: 0;
+        right: 0;
+        top: 0;
+        bottom: 0;
+      }
+    }
+  }
+}
 
 
+// ---------- MASTERS-MEDIA----------
+@media (max-width: 1100px) {
+  .masters {
+    &__video {
+      justify-content: space-evenly;
+
+      &-item {
+        margin: 5px;
+      }
+
+      div:nth-child(5) {
+        display: none;
+      }
+    }
+  }
+}
+
+@media (max-width: 480px) {
+  .masters {
+    &__title {
+      margin: 5px;
+    }
+
+    &__video {
+      justify-content: space-evenly;
+
+      &-item,
+      .col {
+        margin: 10px 5px;
+        width: 164px;
+        height: 215px;
+
+        .masters-video-cover {
+          //width: 164px;
+          //height: 215px;
+          width: 120%;
+          height: auto;
+        }
+      }
+
+      div:nth-child(5) {
+        display: none;
+      }
+    }
+  }
 }

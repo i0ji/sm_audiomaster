@@ -354,6 +354,7 @@ table {
   display: flex;
   flex-direction: column;
   justify-content: space-evenly;
+  align-items: center;
 }
 .footer__contacts p {
   font-size: 14px;
@@ -361,7 +362,7 @@ table {
   align-items: center;
 }
 .footer__contacts p:nth-child(1) {
-  text-align: center;
+  justify-content: center;
 }
 .footer__contacts img {
   margin-right: 5px;

@@ -3,12 +3,17 @@
   "version": "1.0.0",
   "description": "audiomaster portfolio model",
   "main": "index.js",
+  "repository": {
+    "url": "git+https://https://github.com/HardTurn/audiomaster.git"
+  },
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "build": "webpack",
     "start": "webpack-dev-server --hot --mode development",
     "dev": "webpack --mode development",
-    "prod": "webpack --mode prodcution"
+    "prod": "webpack --mode prodcution",
+    "deploy": "gh-pages -d dist"
+
   },
   "keywords": [
     "audiomodel",

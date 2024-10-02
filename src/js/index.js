@@ -1,4 +1,4 @@
-import 'reset-css'
-import '../styles/main.scss'
+import "reset-css";
+import "../styles/main.scss";
 
-console.log('13.04.24');
+console.log("13.04.24");

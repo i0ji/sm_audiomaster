@@ -38,5 +38,10 @@
     "sass": "^1.85.1",
     "sass-loader": "^16.0.5",
     "webpack-dev-server": "^5.2.0"
+  },
+  "pnpm": {
+    "onlyBuiltDependencies": [
+      "@parcel/watcher"
+    ]
   }
 }

@@ -1,7 +1,8 @@
+@use 'color' as *;
+
 // ---------- CATALOGUE-BLOCK ----------
 .catalogue {
   height: auto;
-
 
   // ---------- CATALOGUE-BENEFITS-ITEMS
   &__benefits-items {
@@ -33,9 +34,7 @@
         height: auto;
       }
     }
-
   }
-
 
   // ---------- CATALOGUE-SETS
   .common-title-m {
@@ -51,7 +50,6 @@
     line-height: 30px;
     display: flex;
     align-items: center;
-
 
     .category-name {
       justify-content: center;
@@ -93,7 +91,6 @@
     }
   }
 
-
   // ---------- MEDIA-CATALOGUE ----------
   @media (max-width: 600px) {
     .common-title-m {
@@ -105,8 +102,7 @@
       }
     }
     .sets-table__items {
-
-      div:nth-child(n+7) {
+      div:nth-child(n + 7) {
         display: none;
       }
     }
@@ -125,6 +121,3 @@
     }
   }
 }
-
-
-

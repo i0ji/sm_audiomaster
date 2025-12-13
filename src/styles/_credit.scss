@@ -1,14 +1,14 @@
+@use 'color' as *;
+
 // ---------- CREDIT ----------
 .credit {
-
   &__font-block {
-    background: #F4F4F4;
+    background: #f4f4f4;
     border-radius: 5px;
     position: relative;
 
     p {
       color: $brand-black;
-
     }
 
     .credit__text {
@@ -19,7 +19,7 @@
       justify-content: space-around;
 
       .common-text-bold {
-        font-size: calc(1em + 1vw)
+        font-size: calc(1em + 1vw);
       }
 
       .common-title-l {
@@ -29,7 +29,6 @@
     }
 
     .credit__banks-img {
-
       div {
         display: flex;
         justify-content: start;

@@ -1,3 +1,5 @@
+@use 'color' as *;
+
 // ---------- ABOUT ----------
 .about {
   background-image: url('../img/about/bg.png');
@@ -7,12 +9,10 @@
   display: flex;
   flex-direction: row;
 
-
   .container-fluid {
     display: flex;
     align-items: center;
     height: 600px;
-
 
     // ---------- ABOUT-TEXT
     .about__text {
@@ -36,10 +36,8 @@
       background-color: transparent;
       border: none;
     }
-
   }
 }
-
 
 // ---------- ABOUT-MEDIA ----------
 @media (min-width: 769px) {
@@ -49,7 +47,6 @@
 }
 
 @media (max-width: 768px) {
-
   .about {
     .container-fluid {
       .about__text {
@@ -62,7 +59,6 @@
       }
     }
   }
-
 
   .common-title-l {
     text-align: center;
@@ -82,7 +78,6 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-
 
     // ---------- ABOUT-HIDDEN-BLOCK
     &__button-block {

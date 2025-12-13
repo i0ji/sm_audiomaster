@@ -8,7 +8,7 @@
   },
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "build": "webpack",
+    "build": "webpack --mode production",
     "start": "webpack-dev-server --hot --mode development",
     "dev": "webpack --mode development",
     "prod": "webpack --mode production",
@@ -26,9 +26,7 @@
     "clean-webpack-plugin": "^4.0.0",
     "gh-pages": "^6.3.0",
     "html-webpack-plugin": "^5.6.5",
-    "html-webpack-plugin": "^5.6.5",
     "on-headers": ">=1.1.0",
-    "webpack": "^5.103.0",
     "webpack": "^5.103.0",
     "webpack-cli": "^6.0.1"
   },

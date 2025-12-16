@@ -1,17 +1,17 @@
-// ---------- IMPORT ----------
-@import 'reset';
-@import 'color';
-@import 'fonts';
-@import 'header';
-@import 'footer';
-@import 'about';
-@import 'catalogue';
-@import 'features';
-@import 'offer';
-@import 'manufacturer';
-@import 'booking';
-@import 'credit';
-@import 'masters';
+// ---------- use ----------
+@use 'reset';
+@use 'color' as *;
+@use 'fonts';
+@use 'header';
+@use 'footer';
+@use 'about';
+@use 'catalogue';
+@use 'features';
+@use 'offer';
+@use 'manufacturer';
+@use 'booking';
+@use 'credit';
+@use 'masters';
 
 // ---------- COMMON-SETTINGS ----------
 .container-fluid {
@@ -30,7 +30,7 @@ section {
 
 button {
   cursor: pointer;
-  transition: .3s all;
+  transition: 0.3s all;
   border: none;
   background-color: transparent;
 }
@@ -48,7 +48,7 @@ button:active {
 .blue-link-button {
   margin-top: 25px;
   padding: 0;
-  color: #23A1D1;
+  color: #23a1d1;
   font-weight: 600;
   font-size: 14px;
   line-height: 27px;
@@ -59,8 +59,8 @@ button:active {
   left: 0;
   width: 0;
   height: 2px;
-  background-color: #23A1D1;
-  content: "";
+  background-color: #23a1d1;
+  content: '';
   transition: width 0.3s ease-out;
 }
 
@@ -83,12 +83,11 @@ button:active {
   align-items: center;
   text-align: center;
   justify-content: center;
-  color: #FFFFFF;
+  color: #ffffff;
   background-color: $brand-yellow;
   border-radius: 5px;
   border: none;
 }
-
 
 // ---------- COMMON-TEXT-TITLE-SETTINGS
 .common-title-l {
@@ -96,7 +95,7 @@ button:active {
   font-weight: 700;
   font-size: 50px;
   line-height: 45px;
-  color: #FFFFFF;
+  color: #ffffff;
 }
 
 .common-title-m {
@@ -106,8 +105,7 @@ button:active {
   color: $brand-black;
 }
 
-
-    // ----- BOLD-TEXT
+// ----- BOLD-TEXT
 b {
   font-weight: 700;
 }
@@ -119,20 +117,18 @@ b {
   color: $brand-black;
 }
 
-    // ----- WHITE-TEXT
+// ----- WHITE-TEXT
 .common-text-s-w {
   font-weight: 400;
   font-size: 20px;
   line-height: 28px;
-  color: #FFFFFF;
+  color: #ffffff;
 }
 
-    // ----- BLACK-TEXT
+// ----- BLACK-TEXT
 .common-text-s-b {
   font-weight: 400;
   font-size: 18px;
   line-height: 22px;
   color: $brand-black;
 }
-
-

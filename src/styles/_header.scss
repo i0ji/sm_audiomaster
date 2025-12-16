@@ -1,14 +1,14 @@
+@use 'color' as *;
+
 // ---------- HEADER ----------
 .header {
   font-family: Gilroy, sans-serif;
-
 
   // ---------- HEADER-TOP-LINE
   &__top-line {
     height: 50px;
 
     .container {
-
       .row {
         justify-content: space-between;
 
@@ -37,7 +37,6 @@
           img {
             margin-right: 3px;
           }
-
         }
 
         .contacts {
@@ -117,7 +116,6 @@
   }
   // ---------- ----------
 
-
   // ---------- HEADER-NAVBAR
   &__navbar {
     height: auto;
@@ -156,7 +154,7 @@
           height: 41px;
           left: 740px;
           top: 72px;
-          border: 1px solid #FFFFFF;
+          border: 1px solid #ffffff;
           border-radius: 8px;
           outline: none;
           background-color: $brand-black;
@@ -175,7 +173,6 @@
       }
     }
 
-
     &-menu {
       display: flex;
 
@@ -192,7 +189,7 @@
         width: 150px;
         height: 50px;
         background-color: transparent;
-        color: #FFFFFF;
+        color: #ffffff;
       }
     }
   }
@@ -230,7 +227,7 @@
         }
 
         &-catalogue {
-          order: 3
+          order: 3;
         }
 
         &-search-form {
@@ -242,7 +239,6 @@
         }
       }
     }
-
   }
   @media (max-width: 500px) {
     .header {
@@ -286,7 +282,7 @@
         font-size: 12px;
         line-height: 20px;
         text-transform: uppercase;
-        color: #FFFFFF;
+        color: #ffffff;
         text-align: center;
         padding: 0 10px;
       }
@@ -297,7 +293,6 @@
     }
   }
 
-
   // ---------- HEADER-BOT-MEDIA
   @media (max-width: 640px) {
     &__bot-line {
@@ -305,7 +300,7 @@
         align-items: center;
         justify-content: right;
         p {
-          display: none ;
+          display: none;
         }
 
         .mobile__numbers {
@@ -318,7 +313,4 @@
       }
     }
   }
-
 }
-
-

@@ -1,7 +1,7 @@
+@use 'color' as *;
+
 // ---------- FEATURES-BLOCK ----------
 .features {
-
-
   // ---------- FEATURES-TITLE
   .features__title {
     display: flex;
@@ -15,7 +15,6 @@
       max-height: 69px;
       height: 69px;
     }
-
 
     // ---------- features-TITLE
 
@@ -60,7 +59,7 @@
         height: 60px;
 
         .common-title-m {
-          color: #FFFFFF;
+          color: #ffffff;
           font-weight: 700;
           font-size: 24px;
           line-height: 30px;
@@ -85,14 +84,12 @@
     }
   }
 
-
   // ---------- FEATURES-MEDIA ----------
 }
 
 @media (max-width: 1100px) {
   .features {
     &__title {
-
       .common-title-m {
         br {
           display: block;
@@ -104,7 +101,6 @@
         height: auto;
       }
     }
-
   }
 }
 
@@ -141,7 +137,6 @@
             height: auto;
           }
         }
-
       }
     }
   }
@@ -177,7 +172,6 @@
 
 @media (max-width: 850px) {
   .features {
-
     .features__question {
       height: 274px;
 
@@ -214,8 +208,6 @@
     height: auto;
 
     &__title {
-
-
       .common-text-s-b {
         height: auto;
         width: auto;

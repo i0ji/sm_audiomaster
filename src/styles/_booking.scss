@@ -1,6 +1,5 @@
 // ---------- BOOKING-SECTION ----------
 .booking {
-
   // ---------- BOOKING-IMAGE
   .booking__image-block {
     display: flex;
@@ -18,7 +17,7 @@
     justify-content: space-evenly;
     padding-left: 110px;
     border-radius: 10px 80px 10px 10px;
-    background-color: #F4F4F4;
+    background-color: #f4f4f4;
   }
 
   .common-title-m {
@@ -34,11 +33,11 @@
       text-indent: 20px;
       width: 310px;
       height: 38px;
-      background: #FFFFFF;
-      border: 1px solid #DEDEDE;
+      background: #ffffff;
+      border: 1px solid #dedede;
       border-radius: 5px;
       margin-right: 19px;
-      outline: #3C3C3C;
+      outline: #3c3c3c;
     }
 
     .common-yellow-button {
@@ -62,7 +61,7 @@
       font-weight: 400;
       font-size: 14px;
       line-height: 33px;
-      color: #23A1D1;
+      color: #23a1d1;
       text-decoration: underline;
     }
   }
@@ -84,7 +83,6 @@
 @media (max-width: 700px) {
   .row {
     justify-content: center;
-
 
     .booking__image-block {
       order: 2;

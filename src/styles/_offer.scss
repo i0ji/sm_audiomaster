@@ -1,7 +1,7 @@
+@use 'color' as *;
+
 // ---------- OFFER-SECTION ----------
 .offer {
-
-
   // ---------- OFFER-TITLE
   &__title {
     position: relative;
@@ -19,7 +19,7 @@
         width: 238px;
         height: 4px;
         opacity: 1;
-        background-color: #F6A700;
+        background-color: #f6a700;
         border: none;
         top: 82px;
         left: 13px;
@@ -45,7 +45,6 @@
 
   // ---------- OFFER-LIST
   &__list {
-
     .offer-item {
       display: flex;
       flex-direction: column;
@@ -57,7 +56,8 @@
         height: auto;
       }
 
-      p, div {
+      p,
+      div {
         margin-top: 8px;
       }
 
@@ -74,7 +74,6 @@
       &__price {
         font-size: 16px;
         font-weight: 700;
-
       }
 
       &__purchase {
@@ -97,13 +96,10 @@
   }
 }
 
-
 // ---------- MEDIA-OFFER ----------
 @media (max-width: 1100px) {
   .offer {
-
     &__title {
-
       .col-9 {
         display: none;
       }
@@ -116,11 +112,11 @@
         height: 70px;
 
         .common-title-m {
-        text-align: center;
-        width: auto;
-        border-bottom: 5px solid $brand-yellow;
-        height: 62px;
-      }
+          text-align: center;
+          width: auto;
+          border-bottom: 5px solid $brand-yellow;
+          height: 62px;
+        }
 
         hr {
           display: none;

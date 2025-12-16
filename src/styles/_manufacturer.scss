@@ -1,6 +1,5 @@
 // ---------- MANUFACTURER-SECTION ----------
 .manufacturer {
-
   // ---------- MANUFACTURER-TITLE
 
   .manufacturer__title {
@@ -9,8 +8,8 @@
     height: 100px;
   }
 
- // ---------- MANUFACTURER-LIST
-  &__item  {
+  // ---------- MANUFACTURER-LIST
+  &__item {
     height: 97px;
 
     img {
@@ -18,5 +17,4 @@
       height: auto;
     }
   }
-
 }

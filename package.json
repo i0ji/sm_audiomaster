@@ -27,7 +27,7 @@
     "gh-pages": "^6.3.0",
     "html-webpack-plugin": "^5.6.5",
     "on-headers": ">=1.1.0",
-    "webpack": "^5.103.0",
+    "webpack": "^5.104.1",
     "webpack-cli": "^6.0.1"
   },
   "dependencies": {
@@ -36,7 +36,7 @@
     "file-loader": "^6.2.0",
     "mini-css-extract-plugin": "^2.9.4",
     "reset-css": "^5.0.2",
-    "sass": "^1.97.0",
+    "sass": "^1.97.2",
     "sass-loader": "^16.0.6",
     "webpack-dev-server": "^5.2.2"
   },

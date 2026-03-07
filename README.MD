@@ -1,7 +1,7 @@
 Website from the layout portfolio.
 Build using:
 
-- gh-pages - https://i0ji.github.io/sm_audiomaster/
+- gh-pages - https://i0ji.github.io/audiomaster/
 - webpack:<br>
   html-webpack-plugin<br>
   webpack-cli<br>
